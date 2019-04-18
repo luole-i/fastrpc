@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9131a3fe-e7ca-48a3-af7f-9731d222252f" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/fastrpc-client/target/" />
+    <ignored path="$PROJECT_DIR$/fastrpc-zk/target/" />
+    <ignored path="$PROJECT_DIR$/fastrpc-server/target/" />
+    <ignored path="$PROJECT_DIR$/fastrpc-api/target/" />
+    <ignored path="$PROJECT_DIR$/fastrpc-common/target/" />
+    <ignored path="$PROJECT_DIR$/fastrpc-registry/target/" />
+    <ignored path="$PROJECT_DIR$/fastrpc-monitor/target/" />
+    <ignored path="$PROJECT_DIR$/test-client/target/" />
+    <ignored path="$PROJECT_DIR$/test-api/target/" />
+    <ignored path="$PROJECT_DIR$/test-server/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fastrpc-server/src/main/java/cn/qenan/fastrpc/server/FastRpcServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test-server/src/main/java/cn/luolei/rpc/server/Bootstrap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" selection-start-line="6" selection-end-line="7" />
+              <folding>
+                <element signature="e#239#240#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test-server/src/main/java/cn/luolei/rpc/server/HelloServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#281#282#0" expanded="true" />
+                <element signature="e#317#318#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/util/MapUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/util/SerializationUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="547">
+              <caret line="53" column="43" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#547#568#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/util/CollectionsUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" selection-start-line="12" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fastrpc-server/src/main/java/cn/qenan/fastrpc/server/FastRpcServerHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test-client/src/main/java/cn/luolei/rpc/client/HelloClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/util/StringUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="20" selection-start-line="20" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#329#330#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#547#548#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test-client/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-20">
+              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Arquillian JUnit Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Kotlin File" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/fastrpc-api/src/main/java/cn/qenan/fastrpc/api/HelloService.java" />
+        <option value="$PROJECT_DIR$/fastrpc-server/src/main/java/cn/qenan/fastrpc/server/FastRpcService.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/beans/FastRpcRequest.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/coder/FastRpcResponse.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/beans/FastRpcResponse.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/coder/p2.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/coder/p1.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/coder/FastRpcDecoder.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/util/SerializationUtil.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/serialization/Serialization.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/serialization/impl/SerializeProtostuff.java" />
+        <option value="$PROJECT_DIR$/fastrpc-registry/src/main/java/cn/qenan/fastrpc/registry/Test.java" />
+        <option value="$PROJECT_DIR$/fastrpc-registry/src/main/java/cn/qenan/fastrpc/registry/ServiceDiscovery.java" />
+        <option value="$PROJECT_DIR$/fastrpc-registry/src/main/java/cn/qenan/fastrpc/registry/ServiceRegistry.java" />
+        <option value="$PROJECT_DIR$/fastrpc-registry/src/main/java/cn/qenan/fastrpc/registry/zk/ZKConfig.java" />
+        <option value="$PROJECT_DIR$/fastrpc-registry/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/fastrpc-registry/src/test/java/resources/spring.xml" />
+        <option value="$PROJECT_DIR$/fastrpc-client/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/fastrpc-registry/src/main/resources/fastrpc.properties" />
+        <option value="$PROJECT_DIR$/fastrpc-registry/src/main/java/cn/qenan/fastrpc/registry/zk/ZKServiceDiscovery.java" />
+        <option value="$PROJECT_DIR$/fastrpc-registry/src/main/resources/spring.xml" />
+        <option value="$PROJECT_DIR$/fastrpc-registry/src/test/java/cn/qenan/fastrpc/registry/zk/ZKServiceRegistryTest.java" />
+        <option value="$PROJECT_DIR$/fastrpc-server/src/main/java/cn/qenan/fastrpc/server/Test.java" />
+        <option value="$PROJECT_DIR$/fastrpc-server/src/main/java/cn/qenan/fastrpc/server/Main.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/util/MapUtil.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/util/CollectionsUtil.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/util/StringUtil.java" />
+        <option value="$PROJECT_DIR$/fastrpc-registry/pom.xml" />
+        <option value="$PROJECT_DIR$/fastrpc-client/src/main/java/cn/qenan/fastrpc/client/FastRpcRemote.java" />
+        <option value="$PROJECT_DIR$/fastrpc-client/pom.xml" />
+        <option value="$PROJECT_DIR$/test-api/src/main/java/cn/luolei/rpc/api/Person.java" />
+        <option value="$PROJECT_DIR$/test-client/pom.xml" />
+        <option value="$PROJECT_DIR$/test-client/src/main/resources/rpc.properties.kt" />
+        <option value="$PROJECT_DIR$/test-server/pom.xml" />
+        <option value="$PROJECT_DIR$/fastrpc-server/pom.xml" />
+        <option value="$PROJECT_DIR$/test-server/src/main/java/cn/luolei/rpc/server/HelloServiceImpl.java" />
+        <option value="$PROJECT_DIR$/test-server/src/main/resources/rpc.properties" />
+        <option value="$PROJECT_DIR$/test-client/src/main/resources/spring.xml" />
+        <option value="$PROJECT_DIR$/test-server/src/main/resources/rpcserver.properties" />
+        <option value="$PROJECT_DIR$/test-server/src/main/resources/spring.xml" />
+        <option value="$PROJECT_DIR$/test-server/src/main/java/cn/luolei/rpc/server/Bootstrap.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/test-api/src/main/java/cn/luolei/rpc/api/HelloService.java" />
+        <option value="$PROJECT_DIR$/fastrpc-server/src/main/java/cn/qenan/fastrpc/server/FastRpcServerHandler.java" />
+        <option value="$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/coder/FastRpcEncoder.java" />
+        <option value="$PROJECT_DIR$/test-client/src/main/java/cn/luolei/rpc/client/HelloClient.java" />
+        <option value="$PROJECT_DIR$/fastrpc-client/src/main/java/cn/qenan/fastrpc/client/FastRpcClient.java" />
+        <option value="$PROJECT_DIR$/fastrpc-client/src/main/java/cn/qenan/fastrpc/client/Remote.java" />
+        <option value="$PROJECT_DIR$/fastrpc-registry/src/main/java/cn/qenan/fastrpc/registry/zk/ZKServiceRegistry.java" />
+        <option value="$PROJECT_DIR$/fastrpc-server/src/main/java/cn/qenan/fastrpc/server/FastRpcServer.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="56" />
+    <option name="y" value="201" />
+    <option name="width" value="1382" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fastrpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fastrpc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fastrpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fastrpc" type="462c0819:PsiDirectoryNode" />
+              <item name="fastrpc-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fastrpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fastrpc" type="462c0819:PsiDirectoryNode" />
+              <item name="fastrpc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fastrpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fastrpc" type="462c0819:PsiDirectoryNode" />
+              <item name="fastrpc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fastrpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fastrpc" type="462c0819:PsiDirectoryNode" />
+              <item name="fastrpc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fastrpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fastrpc" type="462c0819:PsiDirectoryNode" />
+              <item name="fastrpc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fastrpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555578396968" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learnIo" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="cn.qenan.fastrpc.registry.zk" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\ideaWeb\fastrpc\test-server\src\main\resources" />
+      <recent name="D:\code\ideaWeb\fastrpc\test-client\src\main\resources" />
+      <recent name="D:\code\ideaWeb\fastrpc\fastrpc-registry\src\test\java" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.luolei.rpc.api" />
+      <recent name="cn.qenan.fastrpc.server" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.HelloClient">
+    <configuration name="Bootstrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.luolei.rpc.server.Bootstrap" />
+      <module name="testserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.luolei.rpc.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.luolei.rpc.client.HelloClient" />
+      <module name="testclient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.luolei.rpc.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.qenan.fastrpc.server.Main" />
+      <module name="fastrpcserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.qenan.fastrpc.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.qenan.fastrpc.server.Test" />
+      <module name="fastrpcserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.qenan.fastrpc.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZKServiceRegistryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fastrpcregistry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.qenan.fastrpc.registry.zk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.qenan.fastrpc.registry.zk" />
+      <option name="MAIN_CLASS_NAME" value="cn.qenan.fastrpc.registry.zk.ZKServiceRegistryTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloClient" />
+        <item itemvalue="Application.Bootstrap" />
+        <item itemvalue="JUnit.ZKServiceRegistryTest" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9131a3fe-e7ca-48a3-af7f-9731d222252f" name="Default Changelist" comment="" />
+      <created>1554774080102</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554774080102</updated>
+      <workItem from="1554774088266" duration="16510000" />
+      <workItem from="1554876659795" duration="373000" />
+      <workItem from="1554904249500" duration="9905000" />
+      <workItem from="1554984057354" duration="412000" />
+      <workItem from="1554988257148" duration="7528000" />
+      <workItem from="1555076953922" duration="1038000" />
+      <workItem from="1555141091197" duration="37250000" />
+      <workItem from="1555567046129" duration="248000" />
+      <workItem from="1555569555249" duration="3331000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ZKServiceRegistryTest_register - 2019.04.12 at 09h 22m 05s.xml">
+      <configuration name="ZKServiceRegistryTest.register" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZKServiceRegistryTest_register - 2019.04.12 at 09h 22m 12s.xml">
+      <configuration name="ZKServiceRegistryTest.register" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZKServiceRegistryTest_register - 2019.04.12 at 09h 22m 22s.xml">
+      <configuration name="ZKServiceRegistryTest.register" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZKServiceRegistryTest_register - 2019.04.12 at 09h 22m 31s.xml">
+      <configuration name="ZKServiceRegistryTest.register" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZKServiceRegistryTest_register - 2019.04.12 at 09h 22m 38s.xml">
+      <configuration name="ZKServiceRegistryTest.register" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZKServiceRegistryTest_register - 2019.04.12 at 09h 43m 38s.xml">
+      <configuration name="ZKServiceRegistryTest.register" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZKServiceRegistryTest_register - 2019.04.12 at 09h 48m 35s.xml">
+      <configuration name="ZKServiceRegistryTest.register" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZKServiceRegistryTest_register - 2019.04.12 at 09h 48m 45s.xml">
+      <configuration name="ZKServiceRegistryTest.register" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZKServiceRegistryTest_register - 2019.04.12 at 09h 49m 05s.xml">
+      <configuration name="ZKServiceRegistryTest.register" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZKServiceRegistryTest - 2019.04.13 at 19h 27m 30s.xml">
+      <configuration name="ZKServiceRegistryTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="76595000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20045386" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33333334" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.31078905" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.5219365" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37359098" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.31858408" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/fastrpc-registry/src/test/java/resources/fastrpc.properties" />
+    <entry file="file://$PROJECT_DIR$/fastrpc-client/src/main/java/Main.java" />
+    <entry file="file://$PROJECT_DIR$/fastrpc-registry/src/main/java/cn/qenan/fastrpc/registry/ServiceRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-registry/src/main/resources/fastrpc.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-registry/src/main/java/cn/qenan/fastrpc/registry/ServiceDiscovery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-registry/src/main/resources/spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-server/src/main/java/cn/qenan/fastrpc/server/Main.java" />
+    <entry file="file://$PROJECT_DIR$/fastrpc-server/src/main/java/cn/qenan/fastrpc/server/Test.java" />
+    <entry file="file://$PROJECT_DIR$/fastrpc-registry/fastrpcregistry.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-server/fastrpcserver.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.5.RELEASE/spring-beans-5.1.5.RELEASE.jar!/org/springframework/beans/factory/ListableBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-api/src/main/java/cn/luolei/rpc/api/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-registry/src/test/java/cn/qenan/fastrpc/registry/zk/ZKServiceRegistryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" selection-start-line="20" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-registry/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-monitor/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cglib/cglib/3.2.5/cglib-3.2.5.jar!/net/sf/cglib/reflect/FastMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/beans/FastRpcRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-384">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#405#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-api/src/main/java/cn/luolei/rpc/api/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-client/src/main/resources/rpc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="26" selection-start-line="26" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-server/src/main/java/cn/qenan/fastrpc/server/FastRpcService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-client/src/main/resources/spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="77" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
+          <folding>
+            <element signature="e#707#732#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final.jar!/io/netty/bootstrap/ServerBootstrap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864">
+          <caret line="53" column="25" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/serialization/impl/SerializeProtostuff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="33" selection-start-line="33" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/coder/FastRpcDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.32.Final/netty-all-4.1.32.Final.jar!/io/netty/handler/codec/ByteToMessageDecoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/coder/FastRpcEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/serialization/Serialization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-registry/src/main/java/cn/qenan/fastrpc/registry/zk/ZKServiceDiscovery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="54" column="29" lean-forward="true" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-server/src/main/resources/rpcserver.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-server/src/main/resources/spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="17" column="71" lean-forward="true" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-client/src/main/java/cn/qenan/fastrpc/client/Remote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="71" column="69" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-client/src/main/java/cn/qenan/fastrpc/client/FastRpcClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="835">
+          <caret line="63" column="47" lean-forward="true" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-registry/src/main/java/cn/qenan/fastrpc/registry/zk/ZKServiceRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-571">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-server/src/main/java/cn/luolei/rpc/server/Bootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" selection-start-line="6" selection-end-line="7" />
+          <folding>
+            <element signature="e#239#240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-server/src/main/java/cn/luolei/rpc/server/HelloServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-client/src/main/java/cn/luolei/rpc/client/HelloClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-server/src/main/java/cn/qenan/fastrpc/server/FastRpcServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/util/MapUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/util/SerializationUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="53" column="43" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#547#568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/util/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="20" selection-start-line="20" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-common/src/main/java/cn/qenan/fastrpc/common/util/CollectionsUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" selection-start-line="12" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastrpc-server/src/main/java/cn/qenan/fastrpc/server/FastRpcServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8 (2)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>fastrpcclient</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.101tec:zkclient:0.10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

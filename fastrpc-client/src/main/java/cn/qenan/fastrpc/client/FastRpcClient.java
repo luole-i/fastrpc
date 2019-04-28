@@ -59,6 +59,7 @@ public class FastRpcClient extends SimpleChannelInboundHandler {
                             .addLast(FastRpcClient.this);
                 }
             });
+
             boot.option(ChannelOption.TCP_NODELAY, true);
             ChannelFuture future = boot.connect(host, port).sync();
             Channel channel = future.channel();

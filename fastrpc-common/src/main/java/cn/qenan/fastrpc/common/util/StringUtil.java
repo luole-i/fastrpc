@@ -13,6 +13,7 @@ import org.apache.commons.lang3.StringUtils;
  */
 public class StringUtil {
 
+
     public static boolean isEmpty(String s) {
         return StringUtils.isEmpty(s);
     }
@@ -23,5 +24,10 @@ public class StringUtil {
 
     public static String[] split(String s, String operateChar) {
         return StringUtils.split(s, operateChar);
+    }
+
+    public static String ReplacePackageToPath(String packageString) {
+        packageString = packageString.replace('.', '/');
+        return packageString + "/";
     }
 }

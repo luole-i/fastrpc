@@ -6,14 +6,11 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="cn.qenan.fastrpc"></context:component-scan>
 
-    <context:property-placeholder location="classpath:rpc.properties"/>
-
-    <bean id = "serviceDiscovery" class="cn.qenan.fastrpc.registry.zk.ZKServiceDiscovery">
-        <constructor-arg name="zkAddress" value="${rpc.registry_address}"></constructor-arg>
-    </bean>
-
-    <bean id="remote" class="cn.qenan.fastrpc.client.Remote">
-        <constructor-arg name="serviceDiscovery" ref="serviceDiscovery"></constructor-arg>
+    <bean id="placeholderConfigurer" class="cn.qenan.fastrpc.common.properties.FastRpcConfigurer">
+        <property name="location">
+            <value>classpath:fastrpc_client.properties</value>
+        </property>
     </bean>
 </beans>

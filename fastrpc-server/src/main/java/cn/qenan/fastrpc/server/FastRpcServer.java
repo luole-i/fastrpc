@@ -4,20 +4,24 @@ import cn.qenan.fastrpc.common.beans.FastRpcRequest;
 import cn.qenan.fastrpc.common.beans.FastRpcResponse;
 import cn.qenan.fastrpc.common.coder.FastRpcDecoder;
 import cn.qenan.fastrpc.common.coder.FastRpcEncoder;
+import cn.qenan.fastrpc.common.properties.FastRpcConfigurer;
+import cn.qenan.fastrpc.common.properties.FastRpcProperties;
 import cn.qenan.fastrpc.common.util.MapUtil;
 import cn.qenan.fastrpc.common.util.StringUtil;
-import cn.qenan.fastrpc.registry.zk.ZKServiceRegistry;
+import cn.qenan.fastrpc.registry.ServiceRegistry;
+import cn.qenan.fastrpc.registry.zk.ZkServiceRegistry;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import javafx.util.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -28,40 +32,45 @@ import java.util.Map;
  * @author luolei
  * @version 1.0
  */
-public class FastRpcServer implements ApplicationContextAware, InitializingBean {
+@Component
+public class FastRpcServer {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(FastRpcServer.class);
 
     private String serviceAddress;
 
-    private ZKServiceRegistry serviceRegistry;
+    private ServiceRegistry serviceRegistry;
 
-    private Map<String, Object> handlermap = new HashMap<String, Object>();
+    private Map<Pair<String, String>, Object> handlermap = new HashMap<Pair<String, String>, Object>();
 
-    public FastRpcServer(String serviceAddress, ZKServiceRegistry serviceRegistry) {
-        this.serviceAddress = serviceAddress;
+    @Autowired
+    public FastRpcServer(ZkServiceRegistry serviceRegistry) {
+        serviceAddress = FastRpcConfigurer.getProperty(FastRpcProperties.SERVICE_ADDRESS);
         this.serviceRegistry = serviceRegistry;
     }
 
-    public void setApplicationContext(ApplicationContext ctx) throws BeansException {
+    public void start(ApplicationContext ctx) throws Exception {
+        initLoadService(ctx);
+        startServer();
+    }
+
+    private void initLoadService(ApplicationContext ctx) throws BeansException {
         Map<String, Object> serviceBeanMap = ctx.getBeansWithAnnotation(FastRpcService.class);
         if (MapUtil.isNotEmpty(serviceBeanMap)) {
             for (Object serviceBean : serviceBeanMap.values()) {
                 FastRpcService rpcService = serviceBean.getClass().getAnnotation(FastRpcService.class);
                 String serviceName = rpcService.value().getName();
                 String serviceVersion = rpcService.version();
-                if (StringUtil.isNotEmpty(serviceVersion)) {
-                    serviceName += "-" + serviceVersion;
-                }
-                handlermap.put(serviceName, serviceBean);
+                Pair<String, String> service = new Pair<String, String>(serviceName, serviceVersion);
+                handlermap.put(service, serviceBean);
             }
         }
     }
 
-    public void afterPropertiesSet() throws Exception {
+    private void startServer() throws Exception {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
-        try{
+        try {
             ServerBootstrap boot = new ServerBootstrap();
             boot.group(bossGroup, workerGroup);
             boot.channel(NioServerSocketChannel.class);
@@ -80,14 +89,15 @@ public class FastRpcServer implements ApplicationContextAware, InitializingBean 
             int port = Integer.valueOf(addressArr[1]);
             ChannelFuture future = boot.bind(ip, port).sync();
             if (serviceRegistry != null) {
-                for (String serviceName : handlermap.keySet()) {
-                    serviceRegistry.register(serviceName,serviceAddress);
-                    LOGGER.debug("register service: {} to address: {}",serviceName,serviceAddress);
+                for (Pair<String, String> service : handlermap.keySet()) {
+                    serviceRegistry.register(service.getKey(), serviceAddress, service.getValue());
+                    LOGGER.debug("register service:{} version:{} on service address: {}"
+                            , service.getKey(), service.getValue(), serviceAddress);
                 }
             }
-            LOGGER.debug("rpc server started on port: {}",port);
+            LOGGER.debug("fastrpc server started on port: {}", port);
             future.channel().closeFuture().sync();
-        }finally {
+        } finally {
             workerGroup.shutdownGracefully();
             bossGroup.shutdownGracefully();
         }

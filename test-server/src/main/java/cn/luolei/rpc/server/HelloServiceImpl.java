@@ -4,7 +4,7 @@ import cn.luolei.rpc.api.HelloService;
 import cn.luolei.rpc.api.Person;
 import cn.qenan.fastrpc.server.FastRpcService;
 
-@FastRpcService(HelloService.class)
+@FastRpcService(value = HelloService.class,version = "1.0")
 public class HelloServiceImpl implements HelloService {
 
     public String hello(String name) {
@@ -12,6 +12,6 @@ public class HelloServiceImpl implements HelloService {
     }
 
     public String hello(Person person) {
-        return null;
+        return person.getFirstName()+person.getLastName();
     }
 }

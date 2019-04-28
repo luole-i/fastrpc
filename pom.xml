@@ -29,6 +29,8 @@
         <version.commons.lang3>3.8.1</version.commons.lang3>
         <version.cglib>3.2.5</version.cglib>
         <version.objenesis>2.6</version.objenesis>
+        <version.fastjson>1.2.47</version.fastjson>
+        <version.kryo>4.0.2</version.kryo>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -88,6 +90,16 @@
                 <groupId>cn.qenan</groupId>
                 <artifactId>fastrpc-common</artifactId>
                 <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${version.fastjson}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.esotericsoftware</groupId>
+                <artifactId>kryo</artifactId>
+                <version>${version.kryo}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

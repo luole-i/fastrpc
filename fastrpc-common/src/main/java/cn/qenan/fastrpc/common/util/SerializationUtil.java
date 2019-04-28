@@ -1,14 +1,11 @@
 package cn.qenan.fastrpc.common.util;
 
-import io.protostuff.LinkedBuffer;
-import io.protostuff.ProtostuffIOUtil;
-import io.protostuff.Schema;
-import io.protostuff.runtime.RuntimeSchema;
-import org.objenesis.Objenesis;
-import org.objenesis.ObjenesisStd;
-
-import java.util.HashMap;
-import java.util.concurrent.ConcurrentHashMap;
+import cn.qenan.fastrpc.common.properties.FastRpcConfigurer;
+import cn.qenan.fastrpc.common.properties.FastRpcProperties;
+import cn.qenan.fastrpc.common.serialization.Serialization;
+import cn.qenan.fastrpc.common.serialization.fastjson.SerializeFastjson;
+import cn.qenan.fastrpc.common.serialization.kryo.SerializeKryo;
+import cn.qenan.fastrpc.common.serialization.protostuff.SerializeProtostuff;
 
 /**
  * 序列化工具(1.0版本 基于Protostuff实现，后续实现多版本)
@@ -19,48 +16,47 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class SerializationUtil {
 
-    private static ConcurrentHashMap<Class<?>, Schema<?>> cache = new ConcurrentHashMap<Class<?>, Schema<?>>();
+    private static Serialization serializeFastjson;
 
-    private static Objenesis objenesis = new ObjenesisStd(true);
+    private static String serializeType = FastRpcConfigurer.getProperty(FastRpcProperties.SERIALIZE_TYPE);
 
-    private SerializationUtil(){}
+
+    static {
+        serializeFastjson = AcquireSerialize.getSerialize(serializeType);
+    }
 
     /**
      * 序列化
      */
-    public static <T> byte[] serialize(T o){
-        Class<T> c = (Class<T>)o.getClass();
-        LinkedBuffer buffer = LinkedBuffer.allocate(LinkedBuffer.DEFAULT_BUFFER_SIZE);
-        try{
-            Schema<T> schema = getSchema(c);
-            return ProtostuffIOUtil.toByteArray(o,schema,buffer);
-        }catch (Exception e){
-            throw new IllegalStateException(e.getMessage(),e);
-        }finally {
-            buffer.clear();
-        }
+    public static <T> byte[] serialize(T o) {
+        return serializeFastjson.serialize(o);
     }
 
     /**
-     *反序列化
+     * 反序列化
      */
-    public static <T>T deserialize(byte[] data,Class<?> c){
-        try {
-            T message = (T) objenesis.newInstance(c);
-            Schema<T> schema = (Schema<T>) getSchema(c);
-            ProtostuffIOUtil.mergeFrom(data,message,schema);
-            return message;
-        }catch (Exception e){
-            throw new IllegalStateException(e.getMessage(),e);
+    public static <T> T deserialize(byte[] data, Class<?> c) {
+        return (T) serializeFastjson.deserialize(data, c);
+    }
+
+    /**
+     * 获取序列化内部类，默认protostuff
+     */
+    private static class AcquireSerialize {
+        private final static String FASTJSON = "fastjson";
+        private final static String KRYO = "kryo";
+        private final static String PROTOSTUFF = "protostuff";
+
+        private static Serialization getSerialize(String type) {
+            Serialization serialization = new SerializeProtostuff();
+            if (FASTJSON.equals(type)) {
+                serialization = new SerializeFastjson();
+            }
+            if (KRYO.equals(type)) {
+                serialization = new SerializeKryo();
+            }
+            return serialization;
         }
     }
 
-    private static <T> Schema<T> getSchema(Class<T> c) {
-        Schema<T> schema = (Schema<T>) cache.get(c);
-        if(schema==null){
-            schema = RuntimeSchema.createFrom(c);
-            cache.put(c,schema);
-        }
-        return schema;
-    }
 }

@@ -1,6 +1,7 @@
 package cn.qenan.fastrpc.registry;
 
 import java.net.InetAddress;
+import java.util.List;
 
 /**
  * 服务发现端口
@@ -16,5 +17,7 @@ public interface ServiceDiscovery {
      * @param serviceName 服务名称
      * @return 服务地址
      */
-    String discover(String serviceName);
+    String discover(String serviceName,String version);
+
+    List<String> discoverall(String serviceName);
 }

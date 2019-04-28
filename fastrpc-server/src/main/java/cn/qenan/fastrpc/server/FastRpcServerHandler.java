@@ -6,6 +6,7 @@ import cn.qenan.fastrpc.common.util.StringUtil;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import javafx.util.Pair;
 import net.sf.cglib.reflect.FastClass;
 import net.sf.cglib.reflect.FastMethod;
 import org.slf4j.Logger;
@@ -17,9 +18,9 @@ import java.util.Map;
 public class FastRpcServerHandler extends SimpleChannelInboundHandler {
     private static final Logger LOGGER = LoggerFactory.getLogger(FastRpcServerHandler.class);
 
-    private final Map<String, Object> handlerMap;
+    private final Map<Pair<String, String>, Object> handlerMap;
 
-    public FastRpcServerHandler(Map<String, Object> handlermap) {
+    public FastRpcServerHandler(Map<Pair<String, String>, Object> handlermap) {
         this.handlerMap = handlermap;
     }
 
@@ -41,10 +42,8 @@ public class FastRpcServerHandler extends SimpleChannelInboundHandler {
         String serviceName = request.getInterfaceName();
         String excptionName = serviceName;
         String serviceVersion = request.getServiceVersion();
-        if (StringUtil.isNotEmpty(serviceVersion)) {
-            serviceName += "-" + serviceVersion;
-        }
-        Object serviceBean = handlerMap.get(serviceName);
+        Pair<String,String> service = new Pair<String, String>(serviceName,serviceVersion);
+        Object serviceBean = handlerMap.get(service);
         if (serviceBean == null) {
             throw new RuntimeException("can not find service :" + excptionName);
         }

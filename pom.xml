@@ -23,7 +23,7 @@
         <version.netty>4.1.32.Final</version.netty>
         <version.zkclient>0.10</version.zkclient>
         <version.junit>4.12</version.junit>
-        <version.commons.collection4>4.0</version.commons.collection4>
+        <version.commons.collection4>4.1</version.commons.collection4>
         <version.commons.lang3>3.8.1</version.commons.lang3>
         <version.cglib>3.2.5</version.cglib>
         <version.objenesis>2.6</version.objenesis>

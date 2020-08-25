@@ -10,9 +10,10 @@ package cn.qenan.fastrpc.common.beans;
 public class FastRpcRequest {
     private String requstId;
     private String interfaceName;
+    private String serviceName;
     private String serviceVersion;
     private String methodName;
-    private Class<?>[] parameterTpyes;
+    private Class<?>[] parameterTypes;
     private Object[] parameters;
 
     public String getRequstId() {
@@ -47,12 +48,12 @@ public class FastRpcRequest {
         this.methodName = methodName;
     }
 
-    public Class<?>[] getParameterTpyes() {
-        return parameterTpyes;
+    public Class<?>[] getParameterTypes() {
+        return parameterTypes;
     }
 
-    public void setParameterTpyes(Class<?>[] parameterTpyes) {
-        this.parameterTpyes = parameterTpyes;
+    public void setParameterTypes(Class<?>[] parameterTypes) {
+        this.parameterTypes = parameterTypes;
     }
 
     public Object[] getParameters() {
@@ -61,5 +62,13 @@ public class FastRpcRequest {
 
     public void setParameters(Object[] parameters) {
         this.parameters = parameters;
+    }
+
+    public String getServiceName() {
+        return serviceName;
+    }
+
+    public void setServiceName(String serviceName) {
+        this.serviceName = serviceName;
     }
 }

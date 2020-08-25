@@ -2,8 +2,8 @@ package cn.qenan.fastrpc.client;
 
 import cn.qenan.fastrpc.common.beans.FastRpcRequest;
 import cn.qenan.fastrpc.common.beans.FastRpcResponse;
-import cn.qenan.fastrpc.common.coder.FastRpcDecoder;
-import cn.qenan.fastrpc.common.coder.FastRpcEncoder;
+import cn.qenan.fastrpc.common.coder.ClientDecoder;
+import cn.qenan.fastrpc.common.coder.ClientEncoder;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -28,6 +28,7 @@ public class FastRpcClient extends SimpleChannelInboundHandler {
     private final int port;
 
     private FastRpcResponse response;
+
 
     public FastRpcClient(String host, int port) {
         this.host = host;
@@ -54,8 +55,8 @@ public class FastRpcClient extends SimpleChannelInboundHandler {
             boot.handler(new ChannelInitializer<SocketChannel>() {
                 protected void initChannel(SocketChannel socketChannel) throws Exception {
                     ChannelPipeline pipeline = socketChannel.pipeline();
-                    pipeline.addLast(new FastRpcEncoder(FastRpcRequest.class))
-                            .addLast(new FastRpcDecoder(FastRpcResponse.class))
+                    pipeline.addLast(new ClientEncoder(FastRpcRequest.class))
+                            .addLast(new ClientDecoder(FastRpcResponse.class))
                             .addLast(FastRpcClient.this);
                 }
             });

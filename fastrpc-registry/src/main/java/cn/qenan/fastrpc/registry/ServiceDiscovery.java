@@ -15,9 +15,6 @@ public interface ServiceDiscovery {
     /**
      * 根据服务名查找服务地址
      * @param serviceName 服务名称
-     * @return 服务地址
      */
-    String discover(String serviceName,String version);
-
-    List<String> discoverall(String serviceName);
+    List<String> discover(String serviceName);
 }

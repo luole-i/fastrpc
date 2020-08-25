@@ -1,17 +1,12 @@
 package cn.luolei.rpc.server;
 
 import cn.luolei.rpc.api.HelloService;
-import cn.luolei.rpc.api.Person;
-import cn.qenan.fastrpc.server.FastRpcService;
+import cn.qenan.fastrpc.server.annotation.FastRpcService;
 
-@FastRpcService(value = HelloService.class,version = "1.0")
+@FastRpcService(value = HelloService.class)
 public class HelloServiceImpl implements HelloService {
 
     public String hello(String name) {
-        return "hello!"+name;
-    }
-
-    public String hello(Person person) {
-        return person.getFirstName()+person.getLastName();
+        return "reques succeed: hello "+name;
     }
 }

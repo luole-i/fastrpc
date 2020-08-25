@@ -1,6 +1,5 @@
 package cn.qenan.fastrpc.common.util;
 
-import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.commons.lang3.StringUtils;
 
 /**
@@ -29,5 +28,9 @@ public class StringUtil {
     public static String ReplacePackageToPath(String packageString) {
         packageString = packageString.replace('.', '/');
         return packageString + "/";
+    }
+
+    public static boolean contains(CharSequence source,CharSequence target){
+        return StringUtils.contains(source,target);
     }
 }

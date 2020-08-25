@@ -1,9 +1,9 @@
 package cn.qenan.fastrpc.common.properties;
 
-import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
-import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -16,18 +16,27 @@ import java.util.Properties;
  * <p>
  * 2019/04/19
  */
-public class FastRpcConfigurer extends PropertyPlaceholderConfigurer {
+public class FastRpcConfigurer{
+    private final static Logger LOGGER = LoggerFactory.getLogger(FastRpcConfigurer.class);
 
     private static Map<String, String> propertyMap;
 
-    @Override
-    protected void processProperties(ConfigurableListableBeanFactory beanFactoryToProcess, Properties props) throws BeansException {
-        super.processProperties(beanFactoryToProcess, props);
-        propertyMap = new HashMap<String, String>();
-        for (Object proper : props.keySet()) {
-            String key = proper.toString();
-            String value = props.getProperty(key);
-            propertyMap.put(key.trim(), value.trim());
+    static {
+        Properties properties = new Properties();
+        String path = Thread.currentThread().getContextClassLoader().getResource("").toString()+"fastrpc.properties";
+        path = path.substring(6);
+        InputStream inputStream = null;
+        try {
+            inputStream = new BufferedInputStream(new FileInputStream(path));
+            properties.load(inputStream);
+            propertyMap = new HashMap<String, String>();
+            for (Object proper : properties.keySet()) {
+                String key = proper.toString();
+                String value = properties.getProperty(key);
+                propertyMap.put(key.trim(), value.trim());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 

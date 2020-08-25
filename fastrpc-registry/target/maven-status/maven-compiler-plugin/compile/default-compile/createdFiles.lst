@@ -1,0 +1,4 @@
+cn\qenan\fastrpc\registry\AddressJson.class
+cn\qenan\fastrpc\registry\ServiceDiscovery.class
+cn\qenan\fastrpc\registry\ServiceRegistry.class
+cn\qenan\fastrpc\registry\ZKConfig.class

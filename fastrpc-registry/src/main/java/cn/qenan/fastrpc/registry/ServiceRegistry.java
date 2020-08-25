@@ -12,6 +12,7 @@ public interface ServiceRegistry {
     /**
      * @param serviceName 服务名
      * @param address 服务地址
+     * @param version 服务版本
      */
     void register(String serviceName,String address,String version);
 }

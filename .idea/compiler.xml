@@ -6,26 +6,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fastrpc-client" />
         <module name="fastrpc-common" />
-        <module name="fastrpc-monitor" />
-        <module name="fastrpc-registry" />
-        <module name="fastrpc-server" />
-        <module name="fastrpcclient" />
-        <module name="fastrpccommon" />
-        <module name="fastrpcmonitor" />
         <module name="fastrpcregistry" />
-        <module name="fastrpcserver" />
-        <module name="test-api" />
-        <module name="test-client" />
         <module name="test-server" />
-        <module name="testapi" />
+        <module name="test-api" />
+        <module name="fastrpc-client" />
         <module name="testclient" />
+        <module name="fastrpcclient" />
+        <module name="fastrpc-registry" />
         <module name="testserver" />
+        <module name="fastrpccommon" />
+        <module name="fastrpc-server" />
+        <module name="testapi" />
+        <module name="fastrpc-monitor" />
+        <module name="fastrpcserver" />
+        <module name="test-client" />
+        <module name="fastrpcmonitor" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="fastrpc-monitor" target="1.8" />
       <module name="fastrpcapi" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="fastrpc-monitor" options="-parameters" />
+    </option>
   </component>
 </project>

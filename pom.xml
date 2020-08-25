@@ -12,7 +12,6 @@
         <module>fastrpc-server</module>
         <module>fastrpc-registry</module>
         <module>fastrpc-common</module>
-        <module>fastrpc-monitor</module>
         <module>test-api</module>
         <module>test-client</module>
         <module>test-server</module>
@@ -22,7 +21,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <version.slf4j>1.7.25</version.slf4j>
         <version.netty>4.1.32.Final</version.netty>
-        <version.spring>5.1.5.RELEASE</version.spring>
         <version.zkclient>0.10</version.zkclient>
         <version.junit>4.12</version.junit>
         <version.commons.collection4>4.0</version.commons.collection4>
@@ -30,7 +28,8 @@
         <version.cglib>3.2.5</version.cglib>
         <version.objenesis>2.6</version.objenesis>
         <version.fastjson>1.2.47</version.fastjson>
-        <version.kryo>4.0.2</version.kryo>
+        <version.avro>1.8.1</version.avro>
+        <version.hessian>4.0.38</version.hessian>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -50,15 +49,9 @@
                 <version>${version.objenesis}</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-test</artifactId>
-                <version>${version.spring}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context</artifactId>
-                <version>${version.spring}</version>
+                <groupId>com.caucho</groupId>
+                <artifactId>hessian</artifactId>
+                <version>${version.hessian}</version>
             </dependency>
             <dependency>
                 <groupId>com.101tec</groupId>
@@ -97,9 +90,9 @@
                 <version>${version.fastjson}</version>
             </dependency>
             <dependency>
-                <groupId>com.esotericsoftware</groupId>
-                <artifactId>kryo</artifactId>
-                <version>${version.kryo}</version>
+                <groupId>org.apache.avro</groupId>
+                <artifactId>avro</artifactId>
+                <version>${version.avro}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -16,8 +16,8 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public interface Serialization {
 
-    public abstract <T> byte[] serialize(T obj);
+    <T> byte[] serialize(T obj);
 
-    public abstract <T> T deserialize(byte[] data, Class<T> c);
+    <T> T deserialize(byte[] data, Class<T> c);
 
 }

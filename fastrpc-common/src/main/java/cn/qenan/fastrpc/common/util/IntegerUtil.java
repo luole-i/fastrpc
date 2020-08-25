@@ -10,7 +10,7 @@ package cn.qenan.fastrpc.common.util;
  */
 public class IntegerUtil {
     public static boolean isValidInt(String s) {
-        if (s == null) {
+        if (StringUtil.isEmpty(s)) {
             return false;
         }
         boolean flag = true;

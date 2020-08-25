@@ -1,28 +1,25 @@
 package cn.qenan.fastrpc.client.loadbalance;
 
 import javafx.util.Pair;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
+/**
+ * 随机获取服务地址策略
+ *
+ * @author luolei
+ * @version 1.0
+ * <p>
+ * 2019/4/27
+ */
 public class RandomStrategy extends AbstractLoadBalance {
-    private static Logger LOGGER = LoggerFactory.getLogger(RandomStrategy.class);
 
     @Override
-    public String acquireAddress(String serviceName, String version) throws NullPointerException{
-        List<String> addressList = cache.acquireServiceList(serviceName, version);
-        if (addressList.size() == 0) {
-            LOGGER.error("the service:{} has no surviving server", serviceName);
-            throw new NullPointerException("the service:"+serviceName+"has no surviving server");
-        }
+    public String getAddressByLoadBalance(Pair<String, String> pair) {
+        List<String> addressList = backCache.get(pair);
         return addressList.get(ThreadLocalRandom.current().nextInt(addressList.size()));
     }
 
-    @Override
-    String getAddressByLoadBlance(Pair<String, String> pair) {
-        return null;
-    }
+
 }

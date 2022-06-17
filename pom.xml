@@ -27,7 +27,7 @@
         <version.commons.lang3>3.8.1</version.commons.lang3>
         <version.cglib>3.2.5</version.cglib>
         <version.objenesis>2.6</version.objenesis>
-        <version.fastjson>1.2.47</version.fastjson>
+        <version.fastjson>1.2.83</version.fastjson>
         <version.avro>1.8.1</version.avro>
         <version.hessian>4.0.38</version.hessian>
     </properties>
